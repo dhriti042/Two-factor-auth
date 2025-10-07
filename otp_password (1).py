@@ -15,12 +15,6 @@ while user_input != password and attempts < max_attempts:
         if user_input == password:
             print("Generating OTP...")
             otp = str(random.randint(100000, 999999))
-            def send_sms(self, message):
-             self.client.messages.create(
-             body=message,
-             from_=self.twilio_number,
-             to=self.phone_number
-        )
             try:
                 client = Client(account_sid, auth_token)
                 message = client.messages.create(
